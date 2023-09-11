@@ -1,0 +1,41 @@
+/* Our "primary" font is HKGrotesk with font-weights of 300, 400, 500, 700 */
+@font-face {
+  font-family: primary;
+  font-weight: 300;
+  src: url('./primary/light.woff2') format('woff2'),
+    url('./primary/light.woff') format('woff');
+}
+
+@font-face {
+  font-family: primary;
+  font-weight: 400;
+  src: url('./primary/regular.woff2') format('woff2'),
+    url('./primary/regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: primary;
+  font-weight: 500;
+  src: url('./primary/medium.woff2') format('woff2'),
+    url('./primary/medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: primary;
+  font-weight: 700;
+  src: url('./primary/bold.woff2') format('woff2'),
+    url('./primary/bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: MetaOffcPro;
+  src: url('./discover/MetaOffcPro-Norm.ttf') format('truetype');
+}
+@font-face {
+  font-family: MetaOffcPro-Medi;
+  src: url('./discover/MetaOffcPro-Medi.ttf') format('truetype');
+}
+@font-face {
+  font-family: MetaOffcPro-Bold;
+  src: url('./discover/MetaOffcPro-Bold.ttf') format('truetype');
+}
