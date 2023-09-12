@@ -1,9 +1,11 @@
-import Button from "../shared/Button/Button";
 
 const HomePage = () => {
     return (
         <>
-        <Button></Button>
+        <h1>Fozan Rizvi | Frontend Developer</h1>
+        <p>I like to craft solid and scalable frontend products with <br />
+            great user experience.
+        </p>
         </>
     );
 }
