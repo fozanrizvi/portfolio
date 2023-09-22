@@ -1,11 +1,12 @@
-import './App.css';
 import HomePage from './components/HomePage/HomePage';
+
+import { CenterDiv } from './App.styled';
 
 function App() {
   return (
-    <div className="App">
+    <CenterDiv>
       <HomePage />
-    </div>
+    </CenterDiv>
   );
 }
 
