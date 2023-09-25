@@ -1,8 +1,11 @@
 import React from 'react'
+import { SubmitButton } from './Button.styled';
 
 const Button = () => {
   return (
-    <button>Hello, it's Fozan Rizvi</button>
+    <SubmitButton>
+      <button>Submit</button>   
+    </SubmitButton>
   )
 }
 
