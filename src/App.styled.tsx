@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
-export const CenterDiv = styled.div`
+export const FlexDiv = styled.div`
+    display: flex;
+    position: relative;
     text-align: center;
-`
+`;
