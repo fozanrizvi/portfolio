@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
+interface Props{
+    isCollapsed: boolean;
+}
 
-export const Sidebar = styled.div`
+export const Sidebar = styled.div<Props>`
     height: 100vh;
     background-color: lightgrey;
-    width: auto;
+    position: fixed;
+    width: ${props => props.isCollapsed ? '80px' : 'auto'};
 `;
