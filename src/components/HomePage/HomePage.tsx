@@ -1,17 +1,16 @@
 import Navbar from '../Navbar/Navbar';
- import { FlexDiv } from './HomePage.styled';
+ import AboutMe from '../aboutMe/AboutMe';
+ import Shelf from '../shelf/Shelf';
+ import Github from '../github/Github';
+import ContactMe from '../contactMe/ContactMe';
+import Hobbies from '../hobbies/Hobbies';
+import { Section } from '../shared/Section.styled';
 
 const HomePage = () => {
     return (
-        <FlexDiv>
-            <Navbar />
-            <div style={{ width: '100%'}}>
-                <h1>Fozan Rizvi | Frontend Developer</h1>
-                <p>I like to craft solid and scalable frontend products with <br />
-                    great user experience.
-                </p>
-            </div>
-        </FlexDiv>
+        <Section>
+            <h1>Fozan Rizvi | Frontend Developer</h1>
+        </Section>
     );
 }
 
