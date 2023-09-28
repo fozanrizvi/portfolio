@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Section } from "../shared/Section.styled";
 import axios from "axios";
 
@@ -7,8 +7,10 @@ const Github = () => {
   const [repos, setRepos] = useState<any>([]);
 
   useEffect(() => {
+    //using async await
     const init = async () => {
       try {
+        //fetching user from github api
         const { data } = await axios.get(
           "https://api.github.com/users/fozanrizvi"
         );
@@ -19,7 +21,8 @@ const Github = () => {
     };
     init();
 
-    axios
+    //using promise
+    axios //fetching repos from github api
       .get("https://api.github.com/users/fozanrizvi/repos")
       .then(({ data }) => {
         setRepos(data);
