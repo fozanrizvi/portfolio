@@ -1,4 +1,3 @@
-import React from "react";
 import { Section } from "../shared/Section.styled";
 
 const Shelf = () => {
