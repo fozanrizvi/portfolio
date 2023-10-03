@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
+
+import SourceIcon from "@mui/icons-material/Source";
+
+//components
 import { Section } from "../shared/Section.styled";
+import { Gitpro, Image, Repos } from "./Github.styled";
+
+//axios
 import axios from "axios";
 
 const Github = () => {
@@ -7,7 +14,7 @@ const Github = () => {
   const [repos, setRepos] = useState<any>([]);
 
   useEffect(() => {
-    //using async await
+    //using async await to call userInfo and repos
     const init = async () => {
       try {
         //fetching user from github api
@@ -21,38 +28,46 @@ const Github = () => {
     };
     init();
 
-    //using promise
-    axios //fetching repos from github api
-      .get("https://api.github.com/users/fozanrizvi/repos")
-      .then(({ data }) => {
+    const getRepos = async () => {
+      try {
+        const { data } = await axios.get(
+          "https://api.github.com/users/fozanrizvi/repos"
+        );
         setRepos(data);
-      })
-      .catch((e) => console.log(e));
+      } catch (e) {
+        console.log(e);
+      }
+    };
+    getRepos();
   }, []);
 
   console.log({ repos });
 
   return (
-    <Section>
+    <Section id="github">
       <h1>Github</h1>
-      <div>
+      <Gitpro>
         <div>
-          <img src={userInfo?.avatar_url} />
+          <Image src={userInfo?.avatar_url} />
+          {/* <Image src={userInfo?.avatar_url} /> */}
         </div>
         <div>
-          <div>{userInfo?.login}</div>
+          <div>{userInfo?.name}</div>
           <div>{userInfo?.bio}</div>
         </div>
-        <div>
+        <Repos>
           {repos.map((repo: any) => (
             <div>
               <a href={repo.html_url} target="_blank">
-                {repo.name}
+                <a>
+                  <SourceIcon />
+                  {repo.name}
+                </a>
               </a>
             </div>
           ))}
-        </div>
-      </div>
+        </Repos>
+      </Gitpro>
     </Section>
   );
 };
