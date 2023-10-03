@@ -1,12 +1,11 @@
-import React from 'react';
-import { Section } from '../shared/Section.styled';
+import { Section } from "../shared/Section.styled";
 
 const Hobbies = () => {
   return (
-    <Section>
-      <h1 id='hobbies'>Hobbies</h1>
+    <Section id="hobbies">
+      <h1>Hobbies</h1>
     </Section>
-  )
-}
+  );
+};
 
-export default Hobbies
+export default Hobbies;
