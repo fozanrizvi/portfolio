@@ -24,7 +24,10 @@ const Navbar = () => {
     <>
       <Sidebar isCollapsed={isCollapsed}>
         <LeftAlignedDiv>
-          <StyledIconButton onClick={handleCollapse}>
+          <StyledIconButton
+            onClick={handleCollapse}
+            onMouseEnter={() => setIsCollapsed(true)}
+          >
             <MenuIcon />
           </StyledIconButton>
         </LeftAlignedDiv>
@@ -38,10 +41,10 @@ const Navbar = () => {
           <MenuItem icon={<GitHubIcon />} href="#github">
             Github
           </MenuItem>
-          <MenuItem icon={<RingVolumeIcon />} href="contactMe">
+          <MenuItem icon={<RingVolumeIcon />} href="#contactMe">
             Contact Me
           </MenuItem>
-          <MenuItem icon={<SportsBasketballIcon />} href="hobbies">
+          <MenuItem icon={<SportsBasketballIcon />} href="#hobbies">
             Hobbies
           </MenuItem>
         </Menu>

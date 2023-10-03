@@ -10,6 +10,13 @@ export const Sidebar = styled.div<Props>`
   background-color: transparent;
   position: fixed;
   width: ${(props) => (props.isCollapsed ? "80px" : "auto")};
+  .ps-menu-root {
+    display: none;
+  }
+
+  &: hover .ps-menu-root {
+    display: block;
+  }
 `;
 
 export const StyledIconButton = styled(IconButton)`
