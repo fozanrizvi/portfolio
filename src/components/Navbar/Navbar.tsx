@@ -10,6 +10,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import ConstructionIcon from "@mui/icons-material/Construction";
 import RingVolumeIcon from "@mui/icons-material/RingVolume";
 import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
 
@@ -40,6 +41,9 @@ const Navbar = () => {
           </MenuItem>
           <MenuItem icon={<GitHubIcon />} href="#github">
             Github
+          </MenuItem>
+          <MenuItem icon={<ConstructionIcon />} href="#skills">
+            Skills
           </MenuItem>
           <MenuItem icon={<RingVolumeIcon />} href="#contactMe">
             Contact Me
