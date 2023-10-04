@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-sdk/client-ses": "^3.421.0",
     "@mui/icons-material": "^5.14.8",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +12,7 @@
     "@types/node": "^16.18.50",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "aws-sdk": "^2.1467.0",
     "axios": "^1.5.1",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
