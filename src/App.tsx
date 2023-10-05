@@ -1,5 +1,4 @@
 import HomePage from "./components/HomePage/HomePage";
-import { FlexDiv } from "./App.styled";
 
 //components
 import Navbar from "./components/Navbar/Navbar";
@@ -9,10 +8,11 @@ import Github from "./components/github/Github";
 import Skills from "./components/skills/Skills";
 import ContactMe from "./components/contactMe/ContactMe";
 import Hobbies from "./components/hobbies/Hobbies";
+import { FlexView } from "./components/shared/FlexView.styled";
 
 function App() {
   return (
-    <FlexDiv>
+    <FlexView>
       <Navbar />
       <div style={{ width: "100%" }}>
         <HomePage />
@@ -23,7 +23,7 @@ function App() {
         <ContactMe />
         <Hobbies />
       </div>
-    </FlexDiv>
+    </FlexView>
   );
 }
 
