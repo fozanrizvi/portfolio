@@ -1,15 +1,19 @@
 import { useEffect, useState } from "react";
 import { Section } from "../shared/Section.styled";
+
 //material icons
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
+
 import Button from "../shared/Button/Button";
+import { SocialMedia } from "./ContactMe.styled";
+
 import AWS from "aws-sdk";
 
 AWS.config.update({
-  accessKeyId: "AKIA3KCLQI6EH2NJ34OU",
-  secretAccessKey: "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",
+  accessKeyId: process.env.REACT_APP_AWS_ACCESS_KEY,
+  secretAccessKey: process.env.REACT_APP_AWS_SECRET_KEY,
 });
 
 const ses = new AWS.SES({
@@ -107,17 +111,29 @@ const ContactMe = () => {
         </form>
       </div>
 
-      <div>
-        <a href="https://www.instagram.com/fozan.developer/">
+      <SocialMedia>
+        <a
+          href="https://www.instagram.com/fozan.developer/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <InstagramIcon />
         </a>
-        <a href="https://www.linkedin.com/in/fozanrizvi/">
+        <a
+          href="https://www.linkedin.com/in/fozanrizvi/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <LinkedInIcon />
         </a>
-        <a href="https://twitter.com/fozanrizvi">
+        <a
+          href="https://twitter.com/fozanrizvi"
+          target="_blank"
+          rel="noreferrer"
+        >
           <TwitterIcon />
         </a>
-      </div>
+      </SocialMedia>
     </Section>
   );
 };
