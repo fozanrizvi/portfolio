@@ -2,15 +2,15 @@ import { Section } from "../shared/Section.styled";
 import { Image } from "./Skills.styled";
 
 //images
-import html5 from "../../assets/images/html5.svg";
-import css3 from "../../assets/images/css3.svg";
-import js from "../../assets/images/js.svg";
-import sass from "../../assets/images/sass.svg";
-import react from "../../assets/images/react.svg";
-import nodejs from "../../assets/images/nodejs.svg";
-import aws from "../../assets/images/aws.svg";
-import ts from "../../assets/images/ts.svg";
-import figma from "../../assets/images/figma.svg";
+import html5 from "../../assets/images/icons/html5.svg";
+import css3 from "../../assets/images/icons/css3.svg";
+import js from "../../assets/images/icons/js.svg";
+import sass from "../../assets/images/icons/sass.svg";
+import react from "../../assets/images/icons/react.svg";
+import nodejs from "../../assets/images/icons/nodejs.svg";
+import aws from "../../assets/images/icons/aws.svg";
+import ts from "../../assets/images/icons/ts.svg";
+import figma from "../../assets/images/icons/figma.svg";
 
 const Skills = () => {
   return (
