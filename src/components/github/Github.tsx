@@ -4,7 +4,12 @@ import SourceIcon from "@mui/icons-material/Source";
 
 //components
 import { Section } from "../shared/Section.styled";
+import { Banner } from "../shared/Banner.styled";
 import { Gitpro, Image, Repos } from "./Github.styled";
+import { Link } from "../shared/Link.styled";
+
+//images
+import github from "../../assets/images/banners/github.svg";
 
 //axios
 import axios from "axios";
@@ -49,21 +54,23 @@ const Github = () => {
       <Gitpro>
         <div>
           <Image src={userInfo?.avatar_url} />
-          {/* <Image src={userInfo?.avatar_url} /> */}
         </div>
         <div>
-          <div>{userInfo?.name}</div>
-          <div>{userInfo?.bio}</div>
+          <a
+            href="https://github.com/fozanrizvi"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Banner src={github} />
+          </a>
         </div>
         <Repos>
           {repos.map((repo: any) => (
             <div>
-              <a href={repo.html_url} target="_blank">
-                <a>
-                  <SourceIcon />
-                  {repo.name}
-                </a>
-              </a>
+              <Link href={repo.html_url} target="_blank">
+                {/* <SourceIcon /> */}
+                {repo.name}
+              </Link>
             </div>
           ))}
         </Repos>
