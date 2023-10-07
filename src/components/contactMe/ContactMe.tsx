@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Section } from "../shared/Section.styled";
 
-//material icons
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
+//social icons
+import instagram from "../../assets/images/icons/instagram.svg";
+import linkedin from "../../assets/images/icons/linkedin.svg";
+import twitter from "../../assets/images/icons/twitter.svg";
 
 import { SubmitButton } from "../shared/Button.styled";
-import { SocialMedia } from "./ContactMe.styled";
+import { SocialIcon, SocialMedia } from "./ContactMe.styled";
 import { Input } from "../shared/Input.styled";
 import { TextBox } from "../shared/Input.styled";
 import { InputWrapper } from "../shared/Input.styled";
@@ -128,21 +128,21 @@ const ContactMe = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <InstagramIcon />
+          <SocialIcon src={instagram} alt="instagram" />
         </a>
         <a
           href="https://www.linkedin.com/in/fozanrizvi/"
           target="_blank"
           rel="noreferrer"
         >
-          <LinkedInIcon />
+          <SocialIcon src={linkedin} alt="linkedin" />
         </a>
         <a
           href="https://twitter.com/fozanrizvi"
           target="_blank"
           rel="noreferrer"
         >
-          <TwitterIcon />
+          <SocialIcon src={twitter} alt="twitter" />
         </a>
       </SocialMedia>
     </Section>
