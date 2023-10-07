@@ -11,7 +11,7 @@ export const Image = styled.img`
 `;
 
 export const Repos = styled.div`
-  border: 1px solid;
+  border: 1px solid #eaf6f6;
   width: 32%;
   text-align: left;
   padding: 20px;
