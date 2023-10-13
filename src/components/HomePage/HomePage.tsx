@@ -1,9 +1,13 @@
 import { Section } from "../shared/Section.styled";
+import Fozan from "../../assets/images/Fozan.png";
+import { Img } from "./HomePage.styled";
 
 const HomePage = () => {
   return (
     <Section>
-      <h1>Fozan Rizvi | Frontend Developer</h1>
+      <Img src={Fozan} />
+      <h1>Fozan Rizvi</h1>
+      <h3>Frontend Developer</h3>
       <div>
         {`I am passionate about creating accessible, responsive, and 
             user-friendly web applications that deliver value and satisfaction
