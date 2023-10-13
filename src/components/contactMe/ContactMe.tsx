@@ -84,7 +84,7 @@ const ContactMe = () => {
   useEffect(() => {}, []);
   return (
     <Section id="contactMe">
-      <h1>Contact Me</h1>
+      <h1>Get in touch!</h1>
       <div>
         <form style={{ textAlign: "left" }}>
           <InputWrapper>

@@ -8,6 +8,7 @@ export const Gitpro = styled.div`
 export const Image = styled.img`
   border-radius: 50%;
   width: 200px;
+  margin: 30px;
 `;
 
 export const Repos = styled.div`
