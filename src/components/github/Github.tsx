@@ -14,6 +14,12 @@ import github from "../../assets/images/banners/github.svg";
 //axios
 import axios from "axios";
 
+//describe interface below:
+// interface State {
+//   userInfo: string,
+//   repos: string
+// }
+
 const Github = () => {
   const [userInfo, setUserInfo] = useState<any>({});
   const [repos, setRepos] = useState<any>([]);
