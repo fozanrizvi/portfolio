@@ -27,8 +27,17 @@ const Shelf = () => {
       content: (
         <div>
           <h3>Challange</h3>
+          <p>
+            needed to built the UI for consistent charts and graphs for the
+            credit reports
+          </p>
           <h3>My role</h3>
+          <p>frontend developer</p>
           <h3>Solution</h3>
+          <p>
+            build a huge library of reusable componets which is been used across
+            the application.
+          </p>
         </div>
       ),
     },
@@ -37,10 +46,18 @@ const Shelf = () => {
       imgSrc: axon,
       content: (
         <div>
-          <h2>axon-dispatch</h2>
           <h3>Challange</h3>
+          <p>
+            integration of api's using videos and audio recording and display
+            them on the UI
+          </p>
           <h3>My role</h3>
+          <p>frontend developer</p>
           <h3>Solution</h3>
+          <p>
+            used a lot of APIs and made sure thier integration was smooth and
+            effective
+          </p>
         </div>
       ),
     },
@@ -49,10 +66,12 @@ const Shelf = () => {
       imgSrc: netflix,
       content: (
         <div>
-          <h1>netflix-clone</h1>
           <h3>Challange</h3>
+          <p>personal project</p>
           <h3>My role</h3>
+          <p>web developer</p>
           <h3>Solution</h3>
+          <p>used modern technologies to built it</p>
         </div>
       ),
     },
@@ -61,10 +80,12 @@ const Shelf = () => {
       imgSrc: airbnb,
       content: (
         <div>
-          <h1>airbnb-clone</h1>
           <h3>Challange</h3>
+          <p>personal project</p>
           <h3>My role</h3>
+          <p>web developer</p>
           <h3>Solution</h3>
+          <p>used modern technologies to built it</p>
         </div>
       ),
     },
@@ -73,10 +94,14 @@ const Shelf = () => {
       imgSrc: wellsfargo,
       content: (
         <div>
-          <h1>wells-fargo</h1>
           <h3>Challange</h3>
+          <p>
+            internal facing app managing data integration and consitent design
+          </p>
           <h3>My role</h3>
+          <p>UI developer</p>
           <h3>Solution</h3>
+          <p>built and learn modern tech like react in this project</p>
         </div>
       ),
     },
@@ -95,7 +120,7 @@ const Shelf = () => {
 
   return (
     <Section id="shelf">
-      <h1>Shelf</h1>
+      <h1>Projects</h1>
       <div>
         {data.map(({ title, imgSrc, content, open }, idx) => {
           const fadeClass = open ? "fadeOut" : "fadeIn";
@@ -105,7 +130,7 @@ const Shelf = () => {
                 <ShelfWrapper className="zoomed">
                   <div>
                     <button onClick={() => zoomOut(idx)}>Back</button>
-                    <h1>{title}</h1>
+                    <h2>{title}</h2>
                     {content}
                   </div>
                   <img src={imgSrc} width={900} />
@@ -115,18 +140,13 @@ const Shelf = () => {
               <DisappearOnZoom className={fadeClass}>
                 <ShelfWrapper className="shelf-wrapper">
                   <Img onClick={() => zoomIn(idx)} role="img" src={imgSrc} />
-                  <h1>{title}</h1>
+                  <h2>{title}</h2>
                 </ShelfWrapper>
               </DisappearOnZoom>
             </ShelfContainer>
           );
         })}
       </div>
-
-      {/* <div>imc3-components</div>
-      <div>axon dispatch</div>
-      <div>netflix clone</div>
-      <div>airbnb clone</div> */}
     </Section>
   );
 };

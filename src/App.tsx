@@ -1,7 +1,7 @@
-import HomePage from "./components/HomePage/HomePage";
+import HomePage from "./components/homePage/HomePage";
 
 //components
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import AboutMe from "./components/aboutMe/AboutMe";
 import Shelf from "./components/shelf/Shelf";
 import Github from "./components/github/Github";

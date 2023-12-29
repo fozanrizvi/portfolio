@@ -29,7 +29,7 @@ const Navbar = () => {
             onClick={handleCollapse}
             onMouseEnter={() => setIsCollapsed(true)}
           >
-            <MenuIcon />
+            <MenuIcon style={{ color: "#c26b3f" }} />
           </StyledIconButton>
         </LeftAlignedDiv>
         <Menu>

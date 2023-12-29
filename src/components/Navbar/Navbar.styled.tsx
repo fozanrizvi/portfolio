@@ -8,13 +8,14 @@ interface Props {
 export const Sidebar = styled.div<Props>`
   height: 100vh;
   background-color: transparent;
+  color: #c26b3f;
   position: fixed;
   width: ${(props) => (props.isCollapsed ? "80px" : "auto")};
   .ps-menu-root {
     display: none;
   }
 
-  &: hover .ps-menu-root {
+  &:hover .ps-menu-root {
     display: block;
   }
 `;

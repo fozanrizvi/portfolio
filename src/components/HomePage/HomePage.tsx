@@ -1,6 +1,7 @@
 import { Section } from "../shared/Section.styled";
 import Fozan from "../../assets/images/Fozan.png";
 import { Img } from "./HomePage.styled";
+import { Text } from "../shared/Text.styled";
 
 const HomePage = () => {
   return (
@@ -8,11 +9,11 @@ const HomePage = () => {
       <Img src={Fozan} />
       <h1>Fozan Rizvi</h1>
       <h3>Frontend Developer</h3>
-      <div>
-        {`I am passionate about creating accessible, responsive, and 
+      <Text>
+        {`I am passionate about creating accessible, responsive and 
             user-friendly web applications that deliver value and satisfaction
             to the users.`}
-      </div>
+      </Text>
     </Section>
   );
 };

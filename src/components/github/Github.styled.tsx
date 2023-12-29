@@ -8,19 +8,18 @@ export const Gitpro = styled.div`
 
 export const Image = styled.img`
   border-radius: 50%;
-  width: 200px;
-  margin: 30px;
+  width: 280px;
+  margin: 60px 0px 0px 80px;
 `;
 
 export const Repos = styled.div`
-  background-image: url(${back});
   background-size: contain;
-  border: 1px solid #eaf6f6;
-  width: 32%;
+  border: 1px solid #d7e3e3;
+  width: 40%;
   text-align: left;
   padding: 20px;
   font-size: 25px;
-  height: 500px;
+  height: 100vh;
   overflow: scroll;
   margin: 30px;
 `;
