@@ -6,9 +6,9 @@ export const Link = styled.a`
   padding: 20px;
   margin: 10px 0;
   text-decoration: none;
-  color: #272343;
+  color: #c26b3f;
   &:hover {
-    color: #0881a3;
+    color: #672707;
     text-decoration: underline;
   }
 `;

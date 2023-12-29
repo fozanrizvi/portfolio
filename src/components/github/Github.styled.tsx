@@ -4,6 +4,7 @@ import back from "../../assets/images/banners/back.png";
 export const Gitpro = styled.div`
   display: flex;
   justify-content: space-between;
+  color: #672707;
 `;
 
 export const Image = styled.img`
@@ -15,6 +16,7 @@ export const Image = styled.img`
 export const Repos = styled.div`
   background-size: contain;
   border: 1px solid #d7e3e3;
+  color: #672707;
   width: 40%;
   text-align: left;
   padding: 20px;

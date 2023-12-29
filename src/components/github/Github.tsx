@@ -74,7 +74,6 @@ const Github = () => {
           {repos.map((repo: any) => (
             <div>
               <Link href={repo.html_url} target="_blank">
-                {/* <SourceIcon /> */}
                 {repo.name}
               </Link>
             </div>

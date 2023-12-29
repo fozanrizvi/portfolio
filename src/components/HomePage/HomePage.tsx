@@ -8,7 +8,6 @@ const HomePage = () => {
     <Section>
       <Img src={Fozan} />
       <h1>Fozan Rizvi</h1>
-      <h3>Frontend Developer</h3>
       <Text>
         {`I am passionate about creating accessible, responsive and 
             user-friendly web applications that deliver value and satisfaction

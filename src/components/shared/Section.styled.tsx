@@ -9,9 +9,9 @@ export const Section = styled.div`
     font-weight: 100;
     color: #672707;
   }
-  h2,
-  h3 {
+  h2 {
     font-weight: 100;
+    color: #672707;
   }
   min-height: 100vh;
 `;
