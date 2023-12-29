@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
 
-import SourceIcon from "@mui/icons-material/Source";
-
 //components
 import { Section } from "../shared/Section.styled";
 import { Banner } from "../shared/Banner.styled";
-import { Gitpro, Image, Repos } from "./Github.styled";
+import { Gitpro, Image, Image2, Repos, Visit } from "./Github.styled";
 import { Link } from "../shared/Link.styled";
 
 //images
 import github from "../../assets/images/banners/github.svg";
+import arrow from "../../assets/images/icons/arrow.png";
 
 //axios
 import axios from "axios";
@@ -69,6 +68,8 @@ const Github = () => {
           >
             <Banner src={github} />
           </a>
+          <Image2 src={arrow} />
+          <Visit>Visit my Github</Visit>
         </div>
         <Repos>
           {repos.map((repo: any) => (

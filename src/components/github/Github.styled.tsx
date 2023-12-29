@@ -13,6 +13,18 @@ export const Image = styled.img`
   margin: 60px 0px 0px 80px;
 `;
 
+export const Image2 = styled.img`
+  width: 100px;
+  padding: 10px;
+  float: left;
+  margin: -60px 100px -50px 0px;
+`;
+
+export const Visit = styled.div`
+  font-size: xx-large;
+  margin: 80px -200px 100px -840px;
+`;
+
 export const Repos = styled.div`
   background-size: contain;
   border: 1px solid #d7e3e3;
