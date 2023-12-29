@@ -69,7 +69,7 @@ const Github = () => {
             <Banner src={github} />
           </a>
           <Image2 src={arrow} />
-          <Visit>Visit my Github</Visit>
+          <Visit>explore my projects</Visit>
         </div>
         <Repos>
           {repos.map((repo: any) => (

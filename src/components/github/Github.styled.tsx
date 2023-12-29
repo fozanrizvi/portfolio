@@ -23,6 +23,7 @@ export const Image2 = styled.img`
 export const Visit = styled.div`
   font-size: xx-large;
   margin: 80px -200px 100px -840px;
+  color: #c26b3f;
 `;
 
 export const Repos = styled.div`
