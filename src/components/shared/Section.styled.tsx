@@ -5,13 +5,13 @@ export const Section = styled.div`
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   h1 {
-    border: 1px dotted #c26b3f;
+    border: 1px dotted #010101;
     font-weight: 100;
-    color: #672707;
+    color: #010100;
   }
   h2 {
     font-weight: 100;
-    color: #672707;
+    color: #010100;
   }
   min-height: 100vh;
 `;

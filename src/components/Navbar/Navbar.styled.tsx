@@ -6,9 +6,10 @@ interface Props {
 }
 
 export const Sidebar = styled.div<Props>`
+  font-family: sans-serif;
   height: 100vh;
   background-color: transparent;
-  color: #c26b3f;
+  color: #010101;
   position: fixed;
   width: ${(props) => (props.isCollapsed ? "80px" : "auto")};
   .ps-menu-root {
