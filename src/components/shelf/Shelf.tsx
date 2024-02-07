@@ -35,7 +35,7 @@ const Shelf = () => {
           <p>frontend developer</p>
           <h3>Solution</h3>
           <p>
-            build a huge library of reusable components which is been used
+            build a huge library of re-usable components which is been used
             across the application.
           </p>
         </div>
