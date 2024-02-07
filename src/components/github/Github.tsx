@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 //components
 import { Section } from "../shared/Section.styled";
 import { Banner } from "../shared/Banner.styled";
-import { Gitpro, Image, Image2, Repos, Visit } from "./Github.styled";
+import { Gitpro, Image, Repos, Visit } from "./Github.styled";
 import { Link } from "../shared/Link.styled";
 
 //images
@@ -68,7 +68,6 @@ const Github = () => {
           >
             <Banner src={github} />
           </a>
-          <Image2 src={arrow} />
           <Visit>explore my projects</Visit>
         </div>
         <Repos>
