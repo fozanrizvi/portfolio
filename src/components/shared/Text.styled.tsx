@@ -9,5 +9,5 @@ export const Text = styled.p`
     rgba(255, 255, 255, 0.75),
     rgba(255, 255, 255, 0.25)
   );
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(2px);
 `;
