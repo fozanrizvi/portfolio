@@ -1,29 +1,28 @@
-import HomePage from "./components/homePage/HomePage";
+import { GlobalStyle } from "./global.styles";
 
-//components
-import Navbar from "./components/navbar/Navbar";
-import AboutMe from "./components/aboutMe/AboutMe";
-import Shelf from "./components/shelf/Shelf";
-import Github from "./components/github/Github";
+// Components
+import Navigation from "./components/navigation/Navigation";
+import Hero from "./components/hero/Hero";
+import About from "./components/about/About";
+import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
-import ContactMe from "./components/contactMe/ContactMe";
-import Hobbies from "./components/hobbies/Hobbies";
-import { FlexView } from "./components/shared/FlexView.styled";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <FlexView>
-      <Navbar />
-      <div style={{ width: "100%" }}>
-        <HomePage />
-        <AboutMe />
-        <Shelf />
-        <Github />
+    <>
+      <GlobalStyle />
+      <Navigation />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
         <Skills />
-        <ContactMe />
-        <Hobbies />
-      </div>
-    </FlexView>
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
 
