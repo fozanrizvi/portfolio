@@ -1,17 +1,4 @@
 import { MouseEvent } from "react";
-import {
-  FooterContainer,
-  FooterContent,
-  FooterGrid,
-  FooterSection,
-  FooterBrand,
-  DividerLine,
-  FooterBottom,
-  Copyright,
-  SocialLinks,
-  SocialLink,
-  BackToTop,
-} from "./Footer.styled";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,75 +9,160 @@ const Footer = () => {
   };
 
   return (
-    <FooterContainer>
-      <FooterContent>
-        <FooterGrid>
-          <FooterBrand>
-            <h3>FR</h3>
-            <p>
+    <footer className="bg-secondary/50 border-t border-border">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Footer Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-8">
+          {/* Brand */}
+          <div>
+            <h3 className="text-3xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-4">
+              FR
+            </h3>
+            <p className="text-text-secondary text-sm leading-relaxed">
               Full-stack developer crafting innovative digital solutions. Let's build something extraordinary together.
             </p>
-          </FooterBrand>
+          </div>
 
-          <FooterSection>
-            <h4>Navigation</h4>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#skills">Skills</a></li>
+          {/* Navigation */}
+          <div>
+            <h4 className="text-text-primary font-semibold mb-4">Navigation</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="#home" className="text-text-secondary hover:text-accent-1 smooth-transition text-sm">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="text-text-secondary hover:text-accent-1 smooth-transition text-sm">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#projects" className="text-text-secondary hover:text-accent-1 smooth-transition text-sm">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#skills" className="text-text-secondary hover:text-accent-1 smooth-transition text-sm">
+                  Skills
+                </a>
+              </li>
             </ul>
-          </FooterSection>
+          </div>
 
-          <FooterSection>
-            <h4>Resources</h4>
-            <ul>
-              <li><a href="#" target="_blank" rel="noreferrer">Resume</a></li>
-              <li><a href="https://github.com/fozanrizvi" target="_blank" rel="noreferrer">GitHub</a></li>
-              <li><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
-              <li><a href="#contactMe">Contact</a></li>
+          {/* Resources */}
+          <div>
+            <h4 className="text-text-primary font-semibold mb-4">Resources</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/resume.pdf" download className="text-text-secondary hover:text-accent-2 smooth-transition text-sm">
+                  Resume
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/fozanrizvi" target="_blank" rel="noreferrer" className="text-text-secondary hover:text-accent-2 smooth-transition text-sm">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-text-secondary hover:text-accent-2 smooth-transition text-sm">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="#contactMe" className="text-text-secondary hover:text-accent-2 smooth-transition text-sm">
+                  Contact
+                </a>
+              </li>
             </ul>
-          </FooterSection>
+          </div>
 
-          <FooterSection>
-            <h4>Connect</h4>
-            <ul>
-              <li><a href="mailto:fozanrizvi@gmail.com">Email</a></li>
-              <li><a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a></li>
-              <li><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
-              <li><a href="https://github.com/fozanrizvi" target="_blank" rel="noreferrer">GitHub</a></li>
+          {/* Connect */}
+          <div>
+            <h4 className="text-text-primary font-semibold mb-4">Connect</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="mailto:fozanrizvi@gmail.com" className="text-text-secondary hover:text-accent-1 smooth-transition text-sm">
+                  Email
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com" target="_blank" rel="noreferrer" className="text-text-secondary hover:text-accent-1 smooth-transition text-sm">
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-text-secondary hover:text-accent-1 smooth-transition text-sm">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/fozanrizvi" target="_blank" rel="noreferrer" className="text-text-secondary hover:text-accent-1 smooth-transition text-sm">
+                  GitHub
+                </a>
+              </li>
             </ul>
-          </FooterSection>
-        </FooterGrid>
+          </div>
+        </div>
 
-        <DividerLine />
+        {/* Divider */}
+        <div className="border-t border-border my-8" />
 
-        <FooterBottom>
-          <Copyright>
+        {/* Footer Bottom */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          <div className="text-text-secondary text-sm">
             © {currentYear} Fozan Rizvi. All rights reserved.
-          </Copyright>
+          </div>
 
-          <SocialLinks>
-            <SocialLink href="https://github.com/fozanrizvi" target="_blank" rel="noreferrer" title="GitHub">
+          <div className="flex gap-4">
+            <a
+              href="https://github.com/fozanrizvi"
+              target="_blank"
+              rel="noreferrer"
+              title="GitHub"
+              className="w-10 h-10 flex items-center justify-center bg-secondary/50 border border-border rounded-lg hover:border-accent-1 hover:bg-secondary/70 smooth-transition text-lg"
+            >
               ⭐
-            </SocialLink>
-            <SocialLink href="https://linkedin.com" target="_blank" rel="noreferrer" title="LinkedIn">
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              title="LinkedIn"
+              className="w-10 h-10 flex items-center justify-center bg-secondary/50 border border-border rounded-lg hover:border-accent-2 hover:bg-secondary/70 smooth-transition text-lg"
+            >
               💼
-            </SocialLink>
-            <SocialLink href="https://twitter.com" target="_blank" rel="noreferrer" title="Twitter">
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer"
+              title="Twitter"
+              className="w-10 h-10 flex items-center justify-center bg-secondary/50 border border-border rounded-lg hover:border-accent-1 hover:bg-secondary/70 smooth-transition text-lg"
+            >
               ✈️
-            </SocialLink>
-            <SocialLink href="https://instagram.com" target="_blank" rel="noreferrer" title="Instagram">
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noreferrer"
+              title="Instagram"
+              className="w-10 h-10 flex items-center justify-center bg-secondary/50 border border-border rounded-lg hover:border-accent-2 hover:bg-secondary/70 smooth-transition text-lg"
+            >
               📷
-            </SocialLink>
-          </SocialLinks>
+            </a>
+          </div>
 
-          <BackToTop href="#" onClick={handleBackToTop}>
+          <a
+            href="#"
+            onClick={handleBackToTop}
+            className="text-accent-1 hover:text-accent-2 smooth-transition font-semibold text-sm"
+          >
             ↑ Back to Top
-          </BackToTop>
-        </FooterBottom>
-      </FooterContent>
-    </FooterContainer>
+          </a>
+        </div>
+      </div>
+    </footer>
   );
 };
 

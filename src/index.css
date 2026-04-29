@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-primary text-text-primary;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-xl bg-opacity-50;
+  }
+
+  .gradient-accent {
+    @apply bg-gradient-to-r from-accent-1 to-accent-2;
+  }
+
+  .glow-text {
+    @apply text-accent-1 animate-glow;
+  }
+
+  .smooth-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Button Styles */
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-accent-1 to-accent-2 text-primary rounded-lg font-semibold hover:opacity-90 hover:shadow-lg hover:shadow-accent-1/50 smooth-transition;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-accent-1 text-accent-1 rounded-lg font-semibold hover:bg-accent-1/10 hover:shadow-lg hover:shadow-accent-1/30 smooth-transition;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-accent-2 text-accent-2 rounded-lg font-semibold hover:bg-accent-2/10 hover:shadow-lg hover:shadow-accent-2/30 smooth-transition;
+  }
+
+  /* Section Styles */
+  .section-title {
+    @apply text-4xl sm:text-5xl md:text-6xl font-bold mb-4 glow-text;
+  }
+
+  .section-divider {
+    @apply w-24 h-1 bg-gradient-to-r from-accent-1 to-accent-2 mx-auto rounded-full;
+  }
+
+  .section-description {
+    @apply text-text-secondary text-lg mb-8 leading-relaxed max-w-2xl mx-auto;
+  }
+
+  /* Card Styles */
+  .card-base {
+    @apply bg-secondary/30 border border-border rounded-lg backdrop-blur-xl smooth-transition;
+  }
+
+  .card-hover {
+    @apply hover:border-accent-1 hover:bg-secondary/50 hover:shadow-lg hover:shadow-accent-1/20;
+  }
+
+  /* Progress Bar Styles */
+  .progress-bar {
+    @apply h-3 bg-secondary/30 rounded-full overflow-hidden border border-border/50;
+  }
+
+  .progress-fill {
+    @apply h-full rounded-full smooth-transition;
+  }
+}

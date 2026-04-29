@@ -1,13 +1,4 @@
 import { useState } from "react";
-import {
-  NavContainer,
-  NavContent,
-  Logo,
-  NavMenu,
-  NavItem,
-  MenuToggle,
-  ThemeToggle,
-} from "./Navigation.styled";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +12,6 @@ const Navigation = () => {
   ];
 
   const handleResumeDownload = () => {
-    // Create a link element and trigger download
     const link = document.createElement("a");
     link.href = "/resume.pdf";
     link.download = "Fozan_Rizvi_Resume.pdf";
@@ -32,28 +22,68 @@ const Navigation = () => {
   };
 
   return (
-    <NavContainer>
-      <NavContent>
-        <Logo onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          FR
-        </Logo>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-xl border-b border-border">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="text-2xl font-bold bg-gradient-accent bg-clip-text text-transparent hover:opacity-80 smooth-transition"
+          >
+            FR
+          </button>
 
-        <NavMenu isOpen={isOpen}>
-          {navItems.map((item, index) => (
-            <NavItem key={index}>
-              <a href={item.href} onClick={() => setIsOpen(false)}>
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center gap-8">
+            {navItems.map((item, index) => (
+              <a
+                key={index}
+                href={item.href}
+                className="text-text-primary hover:text-accent-1 smooth-transition text-sm font-medium"
+              >
                 {item.label}
               </a>
-            </NavItem>
-          ))}
-          <ThemeToggle onClick={handleResumeDownload}>Resume</ThemeToggle>
-        </NavMenu>
+            ))}
+            <button
+              onClick={handleResumeDownload}
+              className="px-4 py-2 bg-gradient-to-r from-accent-1 to-accent-2 text-primary rounded-lg font-semibold text-sm hover:opacity-90 hover:shadow-lg hover:shadow-accent-1/50 smooth-transition"
+            >
+              Resume
+            </button>
+          </div>
 
-        <MenuToggle onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? "✕" : "☰"}
-        </MenuToggle>
-      </NavContent>
-    </NavContainer>
+          {/* Mobile Menu Toggle */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-text-primary text-2xl"
+          >
+            {isOpen ? "✕" : "☰"}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden pb-4 space-y-2">
+            {navItems.map((item, index) => (
+              <a
+                key={index}
+                href={item.href}
+                onClick={() => setIsOpen(false)}
+                className="block px-4 py-2 text-text-primary hover:text-accent-1 smooth-transition text-sm"
+              >
+                {item.label}
+              </a>
+            ))}
+            <button
+              onClick={handleResumeDownload}
+              className="w-full px-4 py-2 bg-gradient-to-r from-accent-1 to-accent-2 text-primary rounded-lg font-semibold text-sm hover:opacity-90 hover:shadow-lg hover:shadow-accent-1/50 smooth-transition"
+            >
+              Resume
+            </button>
+          </div>
+        )}
+      </div>
+    </nav>
   );
 };
 
