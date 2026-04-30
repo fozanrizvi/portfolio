@@ -12,6 +12,18 @@
 # production
 /build
 
+# aws-exports.js
+
+# AWS deployment - sensitive configs
+dist-config.json
+cf-config.json
+cf-config-clean.json
+s3-policy.json
+s3-policy-simple.json
+s3-policy-oac.json
+policy.json
+.deployment.env
+
 # misc
 .DS_Store
 .env.local
