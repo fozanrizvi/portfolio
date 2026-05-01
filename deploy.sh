@@ -8,10 +8,10 @@ set -e
 echo "🚀 Starting Portfolio Deployment to AWS S3 + CloudFront"
 echo "=================================================="
 
-# Configuration - UPDATE THESE VALUES
-S3_BUCKET="your-portfolio-bucket"  # e.g., fozanrizvi-portfolio
-CLOUDFRONT_DISTRIBUTION_ID="your-cloudfront-id"  # e.g., E1A2B3C4D5E6F
-CUSTOM_DOMAIN="your-domain.com"  # e.g., fozanrizvi.com
+# Configuration
+S3_BUCKET="fozanrizvi.com"
+CLOUDFRONT_DISTRIBUTION_ID="E3EEFWCHVSBR11"
+CUSTOM_DOMAIN="fozanrizvi.com"
 AWS_REGION="us-east-1"
 
 # Check if build directory exists
