@@ -104,7 +104,7 @@ const LiveDemo: React.FC = () => {
             <div className="w-3 h-3 rounded-full bg-red-500"></div>
             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
             <div className="w-3 h-3 rounded-full bg-green-500"></div>
-            <span className="ml-3 text-xs text-gray-400 font-mono">fozan-rag-api • AWS Lambda</span>
+            <span className="ml-3 text-xs text-gray-400 font-mono">ask-my-ai • AWS Lambda</span>
             <span className="ml-auto flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
               <span className="text-xs text-green-400">Live</span>
