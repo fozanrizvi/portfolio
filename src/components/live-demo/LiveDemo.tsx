@@ -73,7 +73,7 @@ const LiveDemo: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="section-title">
-            Live <span className="text-accent-cyan">RAG Demo</span>
+            Ask <span className="text-accent-cyan">My AI</span>
           </h2>
           <div className="section-divider"></div>
           <p className="text-gray-400 max-w-2xl mx-auto mt-4">
