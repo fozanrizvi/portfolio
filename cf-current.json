@@ -1,11 +1,11 @@
 {
-    "ETag": "E1PA6795UKMFR9",
+    "ETag": "E13V1IB3VIYZZH",
     "DistributionConfig": {
         "CallerReference": "a220f526-a223-423c-a4ca-64a52a89ae3d",
         "Aliases": {
             "Quantity": 0
         },
-        "DefaultRootObject": "",
+        "DefaultRootObject": "index.html",
         "Origins": {
             "Quantity": 1,
             "Items": [
