@@ -8,6 +8,7 @@ const Navigation = () => {
     { label: "About", href: "#about" },
     { label: "Projects", href: "#projects" },
     { label: "Skills", href: "#skills" },
+    { label: "JD Matcher", href: "#skill-matcher" },
     { label: "Contact", href: "#contactMe" },
   ];
 

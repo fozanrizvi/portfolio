@@ -1,0 +1,17 @@
+{
+  "Information": [
+    "This file is used by the dotnet-lambda CLI tool.",
+    "Install it: dotnet tool install -g Amazon.Lambda.Tools",
+    "Deploy: cd dotnet-api/SkillMatcher.Api && dotnet lambda deploy-function"
+  ],
+  "profile": "default",
+  "region": "us-east-1",
+  "configuration": "Release",
+  "framework": "net8.0",
+  "function-runtime": "dotnet8",
+  "function-memory-size": 256,
+  "function-timeout": 30,
+  "function-handler": "SkillMatcher.Api",
+  "function-name": "portfolio-skill-matcher",
+  "function-description": "JD skill-matching API for Fozan's portfolio"
+}
